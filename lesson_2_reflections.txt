@@ -1,0 +1,42 @@
+What happens when you initialize a repository? Why do you need to do it?
+metadata created in .git
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+commit will be a snapshot of the staging area, we can keep untracked changes in the working directory
+
+How can you use the staging area to make sure you have one commit per logical change?
+only add to staging area when logical bundle is done
+
+
+git log --graph --oneline master coins
+git log -n 1
+
+=> effacer branche locale
+git branch -d coins
+git gc
+
+=> créer branche
+git checkout -b coins 
+	== 
+git branch coins
+git checkout coins
+
+
+git merge --abort
+
+
+=> see the parent commit
+git show commit_id
+
+
+ git config --global core.autocrlf true
+
+
+
+git remote add origin https://github.com/doudough/reflections.git
+git remote -v
+git push origin master
+
+git diff --staged
+
+git config --global credential.helper wincred
